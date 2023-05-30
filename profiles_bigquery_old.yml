@@ -1,0 +1,16 @@
+# Documentation: https://docs.getdbt.com/docs/get-started/connection-profiles
+
+template_by_vitlamdata:
+  outputs:
+    dev:
+      project: learn-dbt-384207
+      keyfile: D:\dbt\project\learn_dbt\conf\learn-dbt-384207-9564e7e70a5d.json
+      dataset: learn_dbt
+      location: asia-southeast1
+      type: bigquery
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      method: service-account
+      priority: interactive
+      threads: 4
+  target: dev
